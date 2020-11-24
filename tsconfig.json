@@ -9,12 +9,10 @@
     "paths": {
       "@/*": ["*"]
     },
+    "jsx": "react",
     "sourceMap": true,
     "strict": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "noEmit": false
+    "resolveJsonModule": true
   },
   "include": [
     "./src/**/*"
