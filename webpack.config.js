@@ -20,27 +20,6 @@ module.exports = {
         test: /\.ts$/,
         exclude: /node_modules/,
         loader: 'ts-loader'
-      },
-      {
-        test: /\.s(c|a)ss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sassOptions: {
-                fiber: require('fibers'),
-                indentedSyntax: true
-              }
-            }
-          }
-        ]
       }
     ]
   }
