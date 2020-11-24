@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const theme = {
+export const Theme = {
   colors: {
     grayPrimary: '#394867',
     graySecondary: '#8C9BB5',
@@ -24,7 +24,7 @@ export default createGlobalStyle`
   padding: 0rem;
   box-sizing: border-box;
   letter-spacing: 0.1rem;
-  font-family: Roboto, monospace, Arial, Helvetica, sans-serif;
+  font-family: Ubuntu, Roboto, monospace, Arial, Helvetica, sans-serif;
   font-size: 62.5%;
   background: transparent;
   border: 0;
@@ -33,13 +33,13 @@ export default createGlobalStyle`
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: ${() => theme.colors.greenPrimary} transparent;
+  scrollbar-color: ${() => Theme.colors.greenPrimary} transparent;
 }
 
 body {
   line-height: 1.2rem;
   color: #FFFFFF;
-  background-color: ${() => theme.colors.grayQuintenary};
+  background-color: ${() => Theme.colors.grayQuintenary};
   height: auto;
   pointer-events: none;
 }
@@ -57,7 +57,7 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: ${() => theme.colors.greenPrimary};
+  background: ${() => Theme.colors.greenPrimary};
 }
 
 .container  {

@@ -1,14 +1,18 @@
 import React from 'react'
-import ComponentInitialTransition from '@/presentation/components/Transitions/Initial/InitialTransition'
+import { ThemeProvider } from 'styled-components'
+import { Theme } from '@/presentation/style/global'
+import ComponentInitialTransition from '@/presentation/components/Transition/Initial/InitialTransition'
 import { StyledApp } from './style'
 
 const App: React.FC = () => {
   return (
     <>
-      <ComponentInitialTransition/>
-      <StyledApp>
-        Hello
-      </StyledApp>
+      <ThemeProvider theme={Theme}>
+        <ComponentInitialTransition/>
+        <StyledPagApp className="container flex-center">
+          Hello
+        </StyledApp>
+      </ThemeProvider>
     </>
   )
 }
