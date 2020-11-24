@@ -1,26 +1,42 @@
 const path = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
-  entry: './src/main/main.ts',
+  mode: 'production',
+  entry: './src/main/main.tsx',
   output: {
     path: path.join(__dirname, 'build/js'),
     publicPath: '/build',
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx', '.sass'],
+    extensions: ['.js', '.ts', '.tsx'],
     alias: {
       '@': path.join(__dirname, 'src')
     }
   },
-  modules: {
+  module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.ts(x?)$/,
         exclude: /node_modules/,
-        loader: 'ts-loader'
+        loader: 'ts-loader',
+        options: {
+          allowTsInNodeModules: true
+        }
       }
     ]
-  }
+  },
+  devServer: {
+    contentBase: './build',
+    writeToDisk: true,
+    historyApiFallback: true
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './build/index.html'
+    }),
+    new CleanWebpackPlugin()
+  ]
 }
