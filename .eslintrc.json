@@ -7,6 +7,7 @@
   },
   "rules": {
     "no-new": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-useless-constructor": "off"
   }
 }
