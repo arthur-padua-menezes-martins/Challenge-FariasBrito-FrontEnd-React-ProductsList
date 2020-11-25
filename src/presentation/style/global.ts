@@ -10,11 +10,16 @@ export const theme = {
 
     greenPrimary: '#4FFF95',
 
+    bluePrimary: '#14274E',
+
     darkPrimary: '#1C1C1E',
     darkSecondary: '#363740',
 
     blackPrimary: '#0f0f0f ',
     blackSecondary: '#181818'
+  },
+  resolution: {
+    firstBreakpointMobile: '900px'
   }
 }
 
@@ -24,7 +29,7 @@ export default createGlobalStyle`
   padding: 0rem;
   box-sizing: border-box;
   letter-spacing: 0.1rem;
-  font-family: Ubuntu, Roboto, monospace, Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'Roboto', monospace, Arial, Helvetica, sans-serif;
   font-size: 62.5%;
   background: transparent;
   border: 0;
@@ -81,5 +86,13 @@ input {
 
 .flex-space-between {
   justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-align-center {
+  align-items: center;
 }
 `

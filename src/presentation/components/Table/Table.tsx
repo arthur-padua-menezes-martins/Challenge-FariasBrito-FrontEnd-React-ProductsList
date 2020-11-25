@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import { StyledTable } from './style'
 
-const ComponentTable: FC = (props) => {
+const ComponentTable: FC = ({ children }) => {
   return (
     <>
       <StyledTable>
-        {props.children}
+        {children}
       </StyledTable>
     </>
   )
