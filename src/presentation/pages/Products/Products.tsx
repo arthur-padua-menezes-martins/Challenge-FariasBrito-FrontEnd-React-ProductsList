@@ -5,7 +5,7 @@ const PageProducts: FC<IPropsTypes> = (props) => {
   const [productsList] = useState(props.productsList)
 
   useEffect(() => {
-    console.log('PageProducts productsList: ', productsList)
+    console.log('productsList: ', productsList)
   })
 
   return (

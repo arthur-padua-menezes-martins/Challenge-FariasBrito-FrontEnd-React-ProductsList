@@ -5,9 +5,12 @@ import {
 export class RemoteSearch implements ISearch<any> {
   constructor (private readonly httpClient: IHttpClient<IHttpResponse<any>>) {}
 
-  async search (params: ISearchParams): Promise<IHttpResponse<any>> {
+  public async search (params: ISearchParams): Promise<IHttpResponse<any>> {
     const httpResponse = await this.httpClient.search(params)
 
-    return httpResponse
+    return {
+      statusCode: httpResponse.statusCode,
+      body: { productsList: httpResponse.body }
+    }
   }
 }

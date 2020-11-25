@@ -3,7 +3,7 @@ import {
 } from './fetch-http-client-protocols'
 
 export class FeatchHttpClient implements IHttpClient<any> {
-  async search (requestParams: IHttpClientParams): Promise<IHttpResponse<any>> {
+  public async search (requestParams: IHttpClientParams): Promise<IHttpResponse<any>> {
     const { url, ...init } = requestParams
 
     const httpResponse = await fetch(url, init)

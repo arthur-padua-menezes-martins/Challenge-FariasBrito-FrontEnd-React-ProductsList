@@ -13,7 +13,7 @@ export class AppController {
     private readonly remoteSearch: RemoteSearch
   ) {}
 
-  async search (searchParams: ISearchParams): Promise<IHttpResponse<IHttpResponseBody> | null> {
+  public async search (searchParams: ISearchParams): Promise<IHttpResponse<IHttpResponseBody> | null> {
     let httpResponse: IHttpResponse<IHttpResponseBody> | null = null
 
     try {
