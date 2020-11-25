@@ -5,16 +5,15 @@ const InitialTransition = keyframes`
     stroke-dashoffset: 140;
   }
   40% {
-    stroke-dashoffset: 0;
     fill: transparent;
   }
-  70%  {
-    fill: #FFFFFF;
-    stroke-dashoffset: 0;
-  },
+  85% {
+    fill: #4FFF95;
+    opacity: 1
+  }
   100% {
-    fill: transparent;
     stroke-dashoffset: 0;
+    opacity: 0;
   }
 `
 
@@ -23,16 +22,15 @@ export const StyledContainerInitialTransition = styled.div`
   height: 100vh;
   
   svg {
-    max-height: 33vh;
-    height: 33vh;
-    min-height: 33vh;
+    width: auto;
+    height: 60vh;
     path {
       fill: transparent;
       stroke-width: 0.4;
       stroke-dasharray: 140;
       stroke-dashoffset: 140;
-      stroke: #FFFFFF;
-      animation: ${InitialTransition} 6s linear forwards;
+      stroke: ${props => props.theme.colors.greenPrimary};
+      animation: ${InitialTransition} 5.5s linear forwards;
     }
   }
 `
