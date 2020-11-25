@@ -1,19 +1,17 @@
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { Theme } from '@/presentation/style/global'
+import React, { useState } from 'react'
+import PageSearch from '@/presentation/pages/Products/Products'
 import ComponentInitialTransition from '@/presentation/components/Transition/Initial/InitialTransition'
 import { StyledApp } from './style'
 
 const App: React.FC = () => {
+  const [transitionOnly, setTransitionOnly] = useState(true)
+
   return (
-    <>
-      <ThemeProvider theme={Theme}>
-        <ComponentInitialTransition/>
-        <StyledPagApp className="container flex-center">
-          Hello
-        </StyledApp>
-      </ThemeProvider>
-    </>
+    <StyledApp className="container">
+      {transitionOnly && <ComponentInitialTransition setOnly={setTransitionOnly.bind(this)}/>}
+
+      {!transitionOnly && <PageSearch/>}
+    </StyledApp>
   )
 }
 
