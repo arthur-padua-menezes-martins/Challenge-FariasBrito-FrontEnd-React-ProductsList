@@ -2,10 +2,10 @@ import React, { FC } from 'react'
 import { IPropsTypes } from './script'
 import { StyledTd } from './style'
 
-const ComponentTd: FC<IPropsTypes> = ({ height, children }) => {
+const ComponentTd: FC<IPropsTypes> = ({ width, height, children }) => {
   return (
     <>
-      <StyledTd height={height}>
+      <StyledTd className="flex-center" width={width} height={height}>
         {children}
       </StyledTd>
     </>

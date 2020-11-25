@@ -43,7 +43,7 @@ html {
 
 body {
   line-height: 1.2rem;
-  color: #FFFFFF;
+  color: ${() => theme.colors.grayPrimary};
   background-color: ${() => theme.colors.grayQuintenary};
   height: auto;
   pointer-events: none;
@@ -51,6 +51,10 @@ body {
 
 input {
   font-family: Roboto, monospace, Arial, Helvetica, sans-serif;
+}
+
+table {
+  height: 40rem !important;
 }
 
 ::-webkit-scrollbar {
@@ -68,6 +72,10 @@ input {
 .container  {
   width: 100%;
   height: 100vh;
+}
+
+.flex {
+  display: flex;
 }
 
 .flex-center {

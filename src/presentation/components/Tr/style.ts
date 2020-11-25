@@ -5,5 +5,5 @@ interface IStyledTrProps {
 }
 export const StyledTr = styled.tr<IStyledTrProps>`
   width: 100%;
-  height: ${props => `${props.height ?? 5}rem`}
+  height: ${props => `${props.height ?? 10}rem`}
 `

@@ -5,7 +5,7 @@ import { StyledTr } from './style'
 const ComponentTr: FC<IPropsTypes> = ({ height, children }) => {
   return (
     <>
-      <StyledTr height={height}>
+      <StyledTr height={height} className="flex">
         {children}
       </StyledTr>
     </>

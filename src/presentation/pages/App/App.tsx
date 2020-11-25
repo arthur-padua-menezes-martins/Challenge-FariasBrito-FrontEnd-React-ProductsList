@@ -1,21 +1,31 @@
-import React, { FC, useState, useEffect } from 'react'
-import PageProducts from '@/presentation/pages/Products/Products'
-import ComponentInitialTransition from '@/presentation/components/Transition/Initial/InitialTransition'
-import { AppController } from './script'
-import { RemoteSearch } from '@/data/usecases/http/remote/remote-search'
-import { FeatchHttpClient } from '@/infra/http/client/fetch/fetch-http-client'
+import React, { FC, useEffect, useState } from 'react'
+import {
+  useDispatch,
+  actionsListSaveProducts
+} from './store'
+import {
+  PageProducts,
+  ComponentInitialTransition
+} from './components'
+import { AppController, RemoteSearch, FeatchHttpClient } from './script'
 import { StyledApp } from './style'
 
 const appController = new AppController(new RemoteSearch(new FeatchHttpClient()))
 const App: FC = () => {
+  const dispatch = useDispatch()
+
   const [transitionOnly, setTransitionOnly] = useState(true)
   const [productsList, setProductsList] = useState({ productsList: [{}] })
 
   useEffect(() => {
     (async () => {
-      const productsList = await appController.search({ url: 'https://api.jsonbin.io/b/5f7f43567243cd7e824cec6f', method: 'GET' })
+      const productsList = await appController.search({
+        url: 'https://api.jsonbin.io/b/5f7f43567243cd7e824cec6f',
+        method: 'GET'
+      })
 
       if (productsList?.body) {
+        dispatch(actionsListSaveProducts(productsList.body))
         setProductsList(productsList.body)
       }
     })()

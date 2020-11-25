@@ -1,3 +1,3 @@
 export interface IPropsTypes {
-  height: number
+  height?: number
 }
