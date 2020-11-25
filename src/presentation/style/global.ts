@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export const Theme = {
+export const theme = {
   colors: {
     grayPrimary: '#394867',
     graySecondary: '#8C9BB5',
@@ -33,13 +33,13 @@ export default createGlobalStyle`
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: ${() => Theme.colors.greenPrimary} transparent;
+  scrollbar-color: ${() => theme.colors.greenPrimary} transparent;
 }
 
 body {
   line-height: 1.2rem;
   color: #FFFFFF;
-  background-color: ${() => Theme.colors.grayQuintenary};
+  background-color: ${() => theme.colors.grayQuintenary};
   height: auto;
   pointer-events: none;
 }
@@ -57,7 +57,7 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: ${() => Theme.colors.greenPrimary};
+  background: ${() => theme.colors.greenPrimary};
 }
 
 .container  {
