@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { FC, useEffect, useState } from 'react'
+import { IPropsTypes } from './script'
 
-const PageSearch: React.FC = () => {
+const PageProducts: FC<IPropsTypes> = (props) => {
+  const [productsList] = useState(props.productsList)
+
+  useEffect(() => {
+    console.log('PageProducts productsList: ', productsList)
+  })
+
   return (
-    <></>
+    <>
+      retornando qualquer coisa
+    </>
   )
 }
 
-export default PageSearch
+export default PageProducts
