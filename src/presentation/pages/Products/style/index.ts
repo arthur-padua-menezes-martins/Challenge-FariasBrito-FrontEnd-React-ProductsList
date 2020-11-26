@@ -1,4 +1,14 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
+
+const GridContainerInitialTransition = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`
 
 export const StyledPageProductsGridContainer = styled.main`
   display: grid;
@@ -6,7 +16,9 @@ export const StyledPageProductsGridContainer = styled.main`
   grid-template-columns: 1FR 1FR;
   margin: auto;
   width: 90vw;
-  section {
+  animation: ${GridContainerInitialTransition} 10s linear ease-in-out;
+
+  & > section {
     position: relative;
   }
 
@@ -21,7 +33,6 @@ interface IStyledPageProductsGridContentProps {
 }
 export const StyledPageProductsGridContent = styled.section<IStyledPageProductsGridContentProps>`
   margin: auto;
-  padding-bottom: 5rem;
   justify-content: flex-start;
   width: 36rem;
   min-height: 5rem;
@@ -43,12 +54,13 @@ export const StyledPageProductsGridContent = styled.section<IStyledPageProductsG
     }
   }
 
-  article {
+  & > article {
     position: absolute;
-    top: -10rem;
+    left: 0;
+    top: -2rem;
     display: flex;
     align-items: center;
     font-size: 2.4rem;
-    color: ${props => props.theme.colors.bluePrimary};
+    color: ${props => props.theme.colors.greenPrimary};
   }
 `
