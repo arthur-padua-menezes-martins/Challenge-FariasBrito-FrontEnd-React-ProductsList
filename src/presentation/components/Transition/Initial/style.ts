@@ -11,7 +11,7 @@ const InitialTransition = keyframes`
   80% {
     stroke-dashoffset: 0;
     fill: #4FFF95;
-    opacity: 0.55
+    opacity: 1
   }
   100% {
     stroke-dasharray: 280;

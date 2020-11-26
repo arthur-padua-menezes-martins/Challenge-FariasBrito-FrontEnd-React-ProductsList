@@ -1,10 +1,11 @@
 import React, { FC } from 'react'
+import { IProps } from './script'
 import { StyledTable } from './style'
 
-const ComponentTable: FC = ({ children }) => {
+const ComponentTable: FC<IProps> = ({ height, children }) => {
   return (
     <>
-      <StyledTable className="efc__box-shadow-thin">
+      <StyledTable height={height} className="efc__box-shadow-thin">
         {children}
       </StyledTable>
     </>
