@@ -12,10 +12,11 @@ interface IStyledComponentCheckboxLabelProps {
   enabled: boolean
 }
 export const StyledComponentCheckboxLabel = styled.label<IStyledComponentCheckboxLabelProps>`
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.7rem;
+  height: 1.7rem;
   border-radius: 0.4rem;
   cursor: pointer;
+  transition: 0.7s linear;
 
   ${
     props => {

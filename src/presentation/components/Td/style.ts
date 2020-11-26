@@ -5,7 +5,6 @@ interface IStyledTdProps {
   height?: number
 }
 export const StyledTd = styled.div<IStyledTdProps>`
-  justify-content: flex-start;
   width: ${props => props.width ?? '100%'};
   height: ${props => `${props.height}rem` ?? '100%'};
 

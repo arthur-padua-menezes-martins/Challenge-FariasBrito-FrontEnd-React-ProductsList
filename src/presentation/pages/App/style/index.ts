@@ -1,5 +1,4 @@
 import styled from 'styled-components'
 
 export const StyledApp = styled.main`
-  overflow: hidden
 `

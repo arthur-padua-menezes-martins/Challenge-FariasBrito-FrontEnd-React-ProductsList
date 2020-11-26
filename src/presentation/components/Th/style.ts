@@ -9,7 +9,7 @@ export const StyledTh = styled.div<IStyledTrProps>`
   height: ${props => `${props.height ?? 5}rem`};
 
   span {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 600;
   }
 `

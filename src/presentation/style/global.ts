@@ -40,9 +40,6 @@ export default createGlobalStyle`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-html {
   scrollbar-width: thin;
   scrollbar-color: ${() => theme.colors.greenPrimary} transparent;
 }
