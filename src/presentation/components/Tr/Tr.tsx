@@ -2,10 +2,10 @@ import React, { FC } from 'react'
 import { IPropsTypes } from './script'
 import { StyledTr } from './style'
 
-const ComponentTr: FC<IPropsTypes> = ({ height, children }) => {
+const ComponentTr: FC<IPropsTypes> = ({ position, height, direction = 'row', children }) => {
   return (
     <>
-      <StyledTr height={height} className="flex">
+      <StyledTr position={position} height={height} direction={direction} className="flex">
         {children}
       </StyledTr>
     </>
