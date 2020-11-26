@@ -47,7 +47,6 @@ export default createGlobalStyle`
   user-select: none;
   scrollbar-width: thin;
   scrollbar-color: ${() => theme.colors.greenPrimary} transparent;
-  transition: 10s ease-in-out;
 }
 
 body {
