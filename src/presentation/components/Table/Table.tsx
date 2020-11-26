@@ -4,7 +4,7 @@ import { StyledTable } from './style'
 const ComponentTable: FC = ({ children }) => {
   return (
     <>
-      <StyledTable>
+      <StyledTable className="efc__box-shadow-thin">
         {children}
       </StyledTable>
     </>

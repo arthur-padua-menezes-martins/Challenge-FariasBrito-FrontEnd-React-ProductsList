@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const StyledTable = styled.table`
+export const StyledTable = styled.main`
   width: 36rem;
-  max-height: 40rem;
+  height: 40rem;
   background-color: #FFFFFF;
-  border-radius: 0.4rem;
+  border: 0.1rem ${props => props.theme.colors.greenPrimary} solid;
   overflow-y: scroll;
 `
