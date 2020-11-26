@@ -12,10 +12,11 @@ const GridContainerInitialTransition = keyframes`
 
 export const StyledPageProductsGridContainer = styled.main`
   display: grid;
-  grid-template-areas: 'informations' 'offers cart';
+  grid-template-areas: 'informations informations' 'offers cart';
   grid-template-columns: 1FR 1FR;
   margin: auto;
   width: 90vw;
+  height: 100%;
   animation: ${GridContainerInitialTransition} 10s linear ease-in-out;
 
   & > section {
@@ -23,8 +24,8 @@ export const StyledPageProductsGridContainer = styled.main`
   }
 
   @media (max-width: ${props => props.theme.resolution.firstBreakpointMobile}) {
-    grid-template-columns: 1FR;
     grid-template-areas: 'informations' 'offers' 'cart';
+    grid-template-columns: 1FR;
   }
 `
 
@@ -32,7 +33,9 @@ interface IStyledPageProductsGridContentProps {
   area: string
 }
 export const StyledPageProductsGridContent = styled.section<IStyledPageProductsGridContentProps>`
+  grid-area: ${props => props.area};
   margin: auto;
+  flex-direction: column;
   justify-content: flex-start;
   width: 36rem;
   min-height: 5rem;
@@ -46,10 +49,18 @@ export const StyledPageProductsGridContent = styled.section<IStyledPageProductsG
           `
 
         case 'offers':
-          return css``
+          return css`
+            @media (max-width: ${props => props.theme.resolution.firstBreakpointMobile}) {
+              margin: 30rem auto;
+            }
+          `
 
         case 'cart':
-          return css``
+          return css`
+            @media (max-width: ${props => props.theme.resolution.firstBreakpointMobile}) {
+              margin: 30rem auto;
+            }
+          `
       }
     }
   }
@@ -57,7 +68,7 @@ export const StyledPageProductsGridContent = styled.section<IStyledPageProductsG
   & > article {
     position: absolute;
     left: 0;
-    top: -2rem;
+    top: 0;
     display: flex;
     align-items: center;
     font-size: 2.4rem;
