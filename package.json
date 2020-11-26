@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "start": "webpack-dev-server --hot --open"
+    "dev": "webpack-dev-server --hot --open",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
