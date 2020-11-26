@@ -8,11 +8,14 @@ import {
 export interface ICartReducers {
   cart: {
     total: number
+    selected: {
+      [field: number]: any
+    }
   }
 }
 
 const initialState = {
-  total: 0
+  total: 0, selected: {}
 }
 
 export default function (state: any = initialState, { type, payload }: any) {
@@ -23,9 +26,8 @@ export default function (state: any = initialState, { type, payload }: any) {
       }
 
     case ACTIONS_CART_SELECT_PRODUCTS:
-      console.log(type, state, payload)
       return {
-        ...state, payload
+        ...state, selected: { ...(state).selected, ...payload }
       }
 
     default:

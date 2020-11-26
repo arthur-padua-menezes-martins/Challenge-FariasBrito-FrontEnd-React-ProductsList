@@ -5,6 +5,6 @@ import {
 export function actionsCartSelectProducts (id: number, only: boolean) {
   return {
     type: ACTIONS_CART_SELECT_PRODUCTS,
-    payload: { id, only }
+    payload: { [id]: { id, only } }
   }
 }
