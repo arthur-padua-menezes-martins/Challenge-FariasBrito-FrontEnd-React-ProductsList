@@ -17,7 +17,6 @@ export const StyledPageProductsGridContainer = styled.main`
   margin: auto;
   width: 90vw;
   height: 100%;
-  animation: ${GridContainerInitialTransition} 10s linear ease-in-out;
 
   & > section {
     position: relative;
@@ -39,6 +38,7 @@ export const StyledPageProductsGridContent = styled.section<IStyledPageProductsG
   justify-content: flex-start;
   width: 36rem;
   min-height: 5rem;
+  animation: ${GridContainerInitialTransition} 4s linear ease-in-out;
 
   ${
     props => {
@@ -46,6 +46,10 @@ export const StyledPageProductsGridContent = styled.section<IStyledPageProductsG
         case 'informations':
           return css`
             grid-column: 1 / span 2;
+
+            @media (max-width: ${props => props.theme.resolution.firstBreakpointMobile}) {
+              margin: 30rem auto;
+            }
           `
 
         case 'offers':

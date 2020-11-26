@@ -5,7 +5,7 @@ import { StyledTable } from './style'
 const ComponentTable: FC<IProps> = ({ height, children }) => {
   return (
     <>
-      <StyledTable height={height} className="efc__box-shadow-thin">
+      <StyledTable height={height} className="mov__relative mov__up">
         {children}
       </StyledTable>
     </>

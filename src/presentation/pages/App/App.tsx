@@ -18,7 +18,7 @@ const App: FC = () => {
 
   useEffect(() => {
     (async () => {
-      const productsList = await appController.search({ url: 'https://api.jsonbin.io/b/5fbec2a99abe4f6e7cabb3ce', method: 'GET' })
+      const productsList = await appController.search({ url: 'https://api.jsonbin.io/b/5f7f43567243cd7e824cec6f', method: 'GET' })
 
       if (productsList?.body) {
         dispatch(actionsListSaveProducts(productsList.body))

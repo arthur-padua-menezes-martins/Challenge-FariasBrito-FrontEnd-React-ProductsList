@@ -4,6 +4,7 @@ interface IStyledTableProps {
   height: number
 }
 export const StyledTable = styled.main<IStyledTableProps>`
+  top: 0 !important;
   margin: 4rem auto;
   width: 36rem;
   height: ${props => `${props.height}rem` ?? '40rem'};

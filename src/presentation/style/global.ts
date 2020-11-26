@@ -47,6 +47,7 @@ export default createGlobalStyle`
   user-select: none;
   scrollbar-width: thin;
   scrollbar-color: ${() => theme.colors.greenPrimary} transparent;
+  transition: 10s ease-in-out;
 }
 
 body {
@@ -111,10 +112,11 @@ body {
   align-items: flex-start;
 }
 
-.efc__box-shadow-thin {
-  
+.mov__relative {
+  position: relative;;
+}
+
+.mov__up {
+  top: 4rem;
 }
 `
-/*
-box-shadow: 0rem 0rem 0.6rem ${() => theme.colors.grayQuaternary};
-*/
