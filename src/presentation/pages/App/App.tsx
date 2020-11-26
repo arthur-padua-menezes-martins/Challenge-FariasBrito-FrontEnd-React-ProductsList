@@ -15,18 +15,13 @@ const App: FC = () => {
   const dispatch = useDispatch()
 
   const [transitionOnly, setTransitionOnly] = useState(true)
-  const [productsList, setProductsList] = useState({ productsList: [{}] })
 
   useEffect(() => {
     (async () => {
-      const productsList = await appController.search({
-        url: 'https://api.jsonbin.io/b/5f7f43567243cd7e824cec6f',
-        method: 'GET'
-      })
+      const productsList = await appController.search({ url: 'https://api.jsonbin.io/b/5fbec2a99abe4f6e7cabb3ce', method: 'GET' })
 
       if (productsList?.body) {
         dispatch(actionsListSaveProducts(productsList.body))
-        setProductsList(productsList.body)
       }
     })()
   }, [])
@@ -35,7 +30,7 @@ const App: FC = () => {
     <StyledApp className="container">
       {transitionOnly && <ComponentInitialTransition setOnly={setTransitionOnly.bind(this)}/>}
 
-      {!transitionOnly && <PageProducts productsList={productsList.productsList}/>}
+      {!transitionOnly && <PageProducts/>}
     </StyledApp>
   )
 }

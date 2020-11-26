@@ -1,0 +1,203 @@
+[33mcommit fdaed8a5f27deb5949e55833019f2988d5500512[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 14:24:27 2020 -0300
+
+    feat: products structure
+
+[33mcommit 099907d4e221fe39cc7415490ce21dae384fc1f4[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 10:55:56 2020 -0300
+
+    chore: install @types/redux
+
+[33mcommit 64d36a557570a051401c6e38f1fc5f163abfcb76[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 10:50:51 2020 -0300
+
+    feat: initial config of the application store
+
+[33mcommit 519ccf556b20a709d22ff7f0a6b7638b49b43a2d[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 10:45:13 2020 -0300
+
+    chore: new rules in .eslintrc.json
+
+[33mcommit 8ca53aa757a587ded096eb519c90a28a98ee093f[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 10:32:29 2020 -0300
+
+    feat: initial redux structure
+
+[33mcommit b3cfea7befc827c8a7d750f2aedf9fb60b599590[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 10:24:59 2020 -0300
+
+    feat: initial structure of PageProducts style
+
+[33mcommit 6dc8ba7255ae09c6c1e14d783b9992d312a95822[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 08:45:14 2020 -0300
+
+    feat: create initial structure of the ComponentTd
+
+[33mcommit cab66520943ec709e524cb12225bdbe478eefe36[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 08:28:23 2020 -0300
+
+    chore: new rule in eslintrc.json
+
+[33mcommit 16e20830b7a9d9f58a0fca738bf15fdc98b92709[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:57:05 2020 -0300
+
+    feat: create initial structure of the ComponentTBody
+
+[33mcommit e7f4d79b1f6f76a4bef982021f8900d736212f87[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:55:06 2020 -0300
+
+    feat: create initial structure of the ComponentTr
+
+[33mcommit dc1b6958d53f35081dda07c84a463491cd24e736[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:54:55 2020 -0300
+
+    feat: create initial structure of the ComponentTable
+
+[33mcommit d08610f114d7ea6e1e9770d816dcb38d1abecf6c[m
+Author: Arthur Padua de Menezes Martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:54:13 2020 -0300
+
+    refactor: code refactor
+
+[33mcommit 308f75db43b41418ad1670a990b16c9c2bcd851c[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:14:57 2020 -0300
+
+    feat: apply effect in PageApp to send request
+
+[33mcommit 126091de4b0a6cc816f4d0025a5c4c4fd78da7fe[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:14:05 2020 -0300
+
+    refactor: code refactor
+
+[33mcommit 3f7145e5e5955ede9825402a4a601e65c7d6848e[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:13:44 2020 -0300
+
+    feat: create implementation of FeatchHttpClient
+
+[33mcommit a5c7d8a23faba01d707ddb6d3990674c614b2161[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:13:09 2020 -0300
+
+    feat: create RemoteSearch to simules middleware of the request
+
+[33mcommit 3bbd9f4768a7498a82edc8b1a9a9c729142db5c1[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:12:44 2020 -0300
+
+    chore: eslintrc.json update
+
+[33mcommit 88e21caa04301046387b49d3bed50a37a4d858f6[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:12:21 2020 -0300
+
+    feat: define env enviroments, and update style rules
+
+[33mcommit 6ec5b63ed78dac6f6322b793c1c5a951a18fbfd1[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Wed Nov 25 07:11:31 2020 -0300
+
+    feat: define interfaces to aplly FetchHttpClient
+
+[33mcommit dd4c4611a93e88969953a8fb01412dbd24180cb0[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 21:38:03 2020 -0300
+
+    feat: in ComponentInitialTransition use props to define whether the component will be shown
+
+[33mcommit 50c0a81694fae165c9def95e1306ba148c8e9baf[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 21:36:30 2020 -0300
+
+    refactor: update the application style file and rename the methods that implement useState
+
+[33mcommit 003f5f5d95e7ac9b038f0f8e707558eac397e83f[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 21:34:23 2020 -0300
+
+    feat: init structure of the PageSearch
+
+[33mcommit e0f80341b4e6049f83b9d2330af9c7bbc5f769da[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 21:33:08 2020 -0300
+
+    refactor: move ThemProvider for entry point of the application
+
+[33mcommit 91fb0e610ca7f06774d41a885b775c7eea527436[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 21:32:04 2020 -0300
+
+    feat: add new rules in .eslintrc.json
+
+[33mcommit 21ba7691f42f8908e21629101bfc459999c73132[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 18:49:09 2020 -0300
+
+    feat: initial structure of the ComponentInitialTransition
+
+[33mcommit 2b99a3ddb6296b05f29084b9400c28fd43715e1c[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 18:48:33 2020 -0300
+
+    feat: add ThemeProvider to simulete global variables
+
+[33mcommit 7d22bb30dc946fb7eca807137d746b19f0afad9d[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 17:36:28 2020 -0300
+
+    feat: couple ComponentInitialTransition to the input component of the application (App)
+
+[33mcommit ebdcdfacbfc39145d19c201245dc070ec5b5d39f[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 17:34:40 2020 -0300
+
+    feat: create the initial React structure
+
+[33mcommit 84b81d31dc491cfa28cb392117b820cc69c2af7a[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 17:33:55 2020 -0300
+
+    chore: update configs
+
+[33mcommit 9a5d49a675aea2ab86a1ac14c94db1c254135ee4[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 17:09:22 2020 -0300
+
+    feat: initial HTML structure
+
+[33mcommit b2fea80d49e7e2596647f0d1f5d7101f466d9de9[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 13:03:52 2020 -0300
+
+    chore: install dev and bundle dependencies
+
+[33mcommit 105ba9f1129123472847f8c411e2842489776a2d[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 12:57:57 2020 -0300
+
+    chore: install front-end dependencies and update configs
+
+[33mcommit bf57d9f506f148c3c7815a2063d74efdd356693d[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 12:48:51 2020 -0300
+
+    chore: initial webpack config and run npm init
+
+[33mcommit 67bb337cf83cbb9dcfda266f7615bf9cc6fbe1d9[m
+Author: arthur-padua-menezes-martins <arthur.software.developer@gmail.com>
+Date:   Tue Nov 24 07:27:52 2020 -0300
+
+    chore: create initial config
