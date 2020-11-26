@@ -2,11 +2,14 @@ import { createGlobalStyle } from 'styled-components'
 
 export const theme = {
   colors: {
+    whitePrimary: '#F5F5F5',
+    whiteSecondary: '#FFFFFF',
+
     grayPrimary: '#394867',
     graySecondary: '#8C9BB5',
     grayTertiary: '#CFD7E4',
     grayQuaternary: '#E5E5E5',
-    grayQuintenary: '#efefef',
+    grayQuintenary: '#EFEFEF',
 
     greenPrimary: '#4FFF95',
 
@@ -16,7 +19,7 @@ export const theme = {
     darkPrimary: '#1C1C1E',
     darkSecondary: '#363740',
 
-    blackPrimary: '#0f0f0f ',
+    blackPrimary: '#0F0F0F ',
     blackSecondary: '#181818'
   },
   resolution: {
@@ -36,6 +39,8 @@ export default createGlobalStyle`
   background: transparent;
   border: 0;
   outline: 0;
+  font-smooth: auto;
+  -webkit-font-smoothing: antialiased;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -46,13 +51,9 @@ export default createGlobalStyle`
 
 body {
   line-height: 1.2rem;
-  color: ${() => theme.colors.darkPrimary};
-  background-color: ${() => theme.colors.grayQuintenary};
+  color: ${() => theme.colors.grayPrimary};
+  background-color: ${() => theme.colors.grayQuaternary};
   height: auto;
-}
-
-input {
-  font-family: Roboto, monospace, Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -111,6 +112,9 @@ input {
 }
 
 .efc__box-shadow-thin {
-  box-shadow: 0rem 0rem 0.6rem ${() => theme.colors.grayQuaternary};
+  
 }
 `
+/*
+box-shadow: 0rem 0rem 0.6rem ${() => theme.colors.grayQuaternary};
+*/
