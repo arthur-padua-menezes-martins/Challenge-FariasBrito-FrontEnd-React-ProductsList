@@ -11,6 +11,7 @@ export const theme = {
     greenPrimary: '#4FFF95',
 
     bluePrimary: '#14274E',
+    blueSecondary: '#109CF1',
 
     darkPrimary: '#1C1C1E',
     darkSecondary: '#363740',
@@ -29,11 +30,16 @@ export default createGlobalStyle`
   padding: 0rem;
   box-sizing: border-box;
   letter-spacing: 0.1rem;
-  font-family: 'Ubuntu', 'Roboto', monospace, Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', 'Roboto', monospace, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 62.5%;
   background: transparent;
   border: 0;
   outline: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html {
@@ -43,18 +49,13 @@ html {
 
 body {
   line-height: 1.2rem;
-  color: ${() => theme.colors.grayPrimary};
+  color: ${() => theme.colors.darkPrimary};
   background-color: ${() => theme.colors.grayQuintenary};
   height: auto;
-  pointer-events: none;
 }
 
 input {
   font-family: Roboto, monospace, Arial, Helvetica, sans-serif;
-}
-
-table {
-  height: 40rem !important;
 }
 
 ::-webkit-scrollbar {
@@ -96,11 +97,23 @@ table {
   justify-content: space-between;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
 .flex-end {
   justify-content: flex-end;
 }
 
 .flex-align-center {
   align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.efc__box-shadow-thin {
+  box-shadow: 0rem 0rem 0.6rem ${() => theme.colors.grayQuaternary};
 }
 `
