@@ -2,9 +2,14 @@ import {
   ACTIONS_LIST_SAVE_PRODUCTS
 } from '@/redux/store/ProductsList/actions/list/save/SaveProducts.actions.types'
 
+import {
+  IHttpResponseBodyProductsList
+} from '@/data/protocols/http/response/http-response'
+
 export interface IListReducers {
   list: {
-    productsList: Object[]
+    [field: string]: any
+    productsList: IHttpResponseBodyProductsList[]
   }
 }
 
