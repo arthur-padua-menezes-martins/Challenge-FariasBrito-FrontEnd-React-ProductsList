@@ -4,11 +4,12 @@ interface IStyledTrProps {
   width?: string
   height?: number
 }
-export const StyledTh = styled.th<IStyledTrProps>`
+export const StyledTh = styled.div<IStyledTrProps>`
   width: ${props => props.width ?? '100%'};
   height: ${props => `${props.height ?? 5}rem`};
 
   span {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 `
