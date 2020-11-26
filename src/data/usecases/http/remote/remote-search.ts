@@ -10,7 +10,9 @@ export class RemoteSearch implements ISearch<any> {
 
     return {
       statusCode: httpResponse.statusCode,
-      body: { productsList: httpResponse.body }
+      body: {
+        productsList: httpResponse.body
+      }
     }
   }
 }

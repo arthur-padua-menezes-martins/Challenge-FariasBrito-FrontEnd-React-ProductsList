@@ -1,10 +1,12 @@
+export interface IHttpResponseBodyProductsList {
+  id: number
+  name: string
+  description: string
+  price: string
+}
+
 export interface IHttpResponseBody {
-  productsList: [{
-    id: number
-    name: string
-    description: string
-    price: string
-  }]
+  productsList: [IHttpResponseBodyProductsList]
 }
 
 export interface IHttpResponse<T> {
